@@ -5,9 +5,11 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using ProPrioRest.Models;
+using System.Web.Http.Cors;
 
 namespace ProPrioRest.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class TaskController : ApiController
     {
         ToDoDBEntities db = new ToDoDBEntities();

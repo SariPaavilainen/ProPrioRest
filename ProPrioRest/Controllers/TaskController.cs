@@ -29,8 +29,10 @@ namespace ProPrioRest.Controllers
         }
 
         // POST api/<controller>
-        public void Post([FromBody]string value)
+        public void Post([FromBody] Task task)
         {
+            db.Tasks.Add(task);
+            db.SaveChanges();
 
         }
 

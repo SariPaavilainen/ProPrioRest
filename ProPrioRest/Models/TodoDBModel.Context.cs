@@ -13,10 +13,10 @@ namespace ProPrioRest.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ToDoDBEntities : DbContext
+    public partial class ToDoDBEntities1 : DbContext
     {
-        public ToDoDBEntities()
-            : base("name=ToDoDBEntities")
+        public ToDoDBEntities1()
+            : base("name=ToDoDBEntities1")
         {
         }
     
@@ -27,6 +27,6 @@ namespace ProPrioRest.Models
     
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Task> Tasks { get; set; }
-        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<User> User { get; set; }
     }
 }

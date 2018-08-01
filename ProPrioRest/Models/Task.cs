@@ -16,7 +16,6 @@ namespace ProPrioRest.Models
     {
         public string Subject { get; set; }
         public string Description { get; set; }
-        public System.Data.Entity.Spatial.DbGeography Location { get; set; }
         public Nullable<System.DateTime> Date { get; set; }
         public Nullable<System.DateTime> Deadline { get; set; }
         public bool Category_Urgent { get; set; }

@@ -197,28 +197,28 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagrams.cs">
-      <DependentUpon>TodoDBModel.tt</DependentUpon>
+      <DependentUpon>ToDoDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Task.cs">
-      <DependentUpon>TodoDBModel.tt</DependentUpon>
+      <DependentUpon>ToDoDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TodoDBModel.Context.cs">
+    <Compile Include="Models\ToDoDBModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TodoDBModel.Context.tt</DependentUpon>
+      <DependentUpon>ToDoDBModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TodoDBModel.cs">
+    <Compile Include="Models\ToDoDBModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TodoDBModel.tt</DependentUpon>
+      <DependentUpon>ToDoDBModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TodoDBModel.Designer.cs">
+    <Compile Include="Models\ToDoDBModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>TodoDBModel.edmx</DependentUpon>
+      <DependentUpon>ToDoDBModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs">
-      <DependentUpon>TodoDBModel.tt</DependentUpon>
+      <DependentUpon>ToDoDBModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -229,15 +229,15 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Models\TodoDBModel.Context.tt">
+    <Content Include="Models\ToDoDBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>TodoDBModel.Context.cs</LastGenOutput>
-      <DependentUpon>TodoDBModel.edmx</DependentUpon>
+      <DependentUpon>ToDoDBModel.edmx</DependentUpon>
+      <LastGenOutput>ToDoDBModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\TodoDBModel.tt">
+    <Content Include="Models\ToDoDBModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>TodoDBModel.edmx</DependentUpon>
-      <LastGenOutput>TodoDBModel.cs</LastGenOutput>
+      <DependentUpon>ToDoDBModel.edmx</DependentUpon>
+      <LastGenOutput>ToDoDBModel.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -263,12 +263,12 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <EntityDeploy Include="Models\TodoDBModel.edmx">
+    <EntityDeploy Include="Models\ToDoDBModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>TodoDBModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>ToDoDBModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\TodoDBModel.edmx.diagram">
-      <DependentUpon>TodoDBModel.edmx</DependentUpon>
+    <Content Include="Models\ToDoDBModel.edmx.diagram">
+      <DependentUpon>ToDoDBModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

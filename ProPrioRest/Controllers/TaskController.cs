@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 using ProPrioRest.Models;
 using System.Web.Http.Cors;
+using System.Web.Http.Description;
 
 namespace ProPrioRest.Controllers
 {
@@ -25,16 +26,24 @@ namespace ProPrioRest.Controllers
         }
 
         // GET api/<controller>/5
-        public string Get(int id)
+        [ResponseType(typeof(Task))]
+        public IHttpActionResult GetTask(int id)
         {
-            return "value";
+            Task task = db.Tasks.Find(id);
+            if (task == null)
+            {
+                return NotFound();
+            }
+            return Ok(task);
         }
 
         // POST api/<controller>
-        public void Post([FromBody] Task task)
+        public HttpResponseMessage Post([FromBody] Task task)
         {
             db.Tasks.Add(task);
             db.SaveChanges();
+            var response = Request.CreateResponse<Task>(System.Net.HttpStatusCode.Created, task);
+            return response;
 
         }
 

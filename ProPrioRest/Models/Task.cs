@@ -24,6 +24,7 @@ namespace ProPrioRest.Models
         public byte[] Photo { get; set; }
         public int Task_Id { get; set; }
         public Nullable<int> User_Id { get; set; }
+        public bool Done { get; set; }
     
         public virtual User User { get; set; }
     }

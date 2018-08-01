@@ -40,6 +40,7 @@ namespace ProPrioRest.Controllers
         // POST api/<controller>
         public HttpResponseMessage Post([FromBody] Task task)
         {
+            task.Date = DateTime.Now;
             db.Tasks.Add(task);
             db.SaveChanges();
             var response = Request.CreateResponse<Task>(System.Net.HttpStatusCode.Created, task);
@@ -53,8 +54,17 @@ namespace ProPrioRest.Controllers
         }
 
         // DELETE api/<controller>/5
-        public void Delete(int id)
+        [HttpDelete]
+        public HttpResponseMessage Delete(int id)
         {
+            Task task = db.Tasks.Find(id);
+            if (task == null)
+            {
+                
+            }
+
+            return null;
+
         }
     }
 }

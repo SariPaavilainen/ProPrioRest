@@ -38,7 +38,7 @@ namespace ProPrioRest.Controllers
         }
 
         // POST api/<controller>
-        public HttpResponseMessage Post([FromUri] Task task)
+        public HttpResponseMessage Post([FromBody] Task task)
         {
             if (ModelState.IsValid)
             {
@@ -55,7 +55,7 @@ namespace ProPrioRest.Controllers
         }
 
         // PUT api/<controller>/5
-        public HttpResponseMessage Put(int id, [FromUri]Task task)
+        public HttpResponseMessage Put(int id, [FromBody]Task task)
         {
             var basetask = db.Tasks.Where(t => t.Task_Id == id);
             if (!basetask.Any())

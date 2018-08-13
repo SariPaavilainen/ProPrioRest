@@ -11,6 +11,7 @@ namespace ProPrioRest.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
+            //Hei, tosi kiva projekti oli teillä! -Elli
 
             return View();
         }
